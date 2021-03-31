@@ -116,7 +116,7 @@ div.menus>div.small {
   font-family: 'Lexend', sans-serif;
   font-weight: bold;
   text-align: center;
-  cursor:-webkit-grab;
+  cursor: url('./source/arrow/cursor_1.png'), auto;
 }
 
 div.menus>div.small>div:active{
