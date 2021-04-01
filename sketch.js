@@ -132,6 +132,13 @@ function draw() {
         text(text_array[key], text_coord[key][0], text_coord[key][1]);
       }
     }
+  }else{
+    if (frameCount % 8 == 1){
+      img_idx++;
+      if(img_idx == img_src.length){
+        img_idx =0;
+      }
+    }
   }
 }
 
@@ -196,9 +203,20 @@ function preload() {
 }
 
 function mousePressed() {
-  img_idx += 1;
-  if (img_idx == img_src.length) {
-    img_idx = 0;
+  if (width > 983) {
+    img_idx += 1;
+    if (img_idx == img_src.length) {
+      img_idx = 0;
+    }
+  }
+}
+
+function touchPressed() {
+  if (width > 983) {
+    img_idx += 1;
+    if (img_idx == img_src.length) {
+      img_idx = 0;
+    }
   }
 }
 
