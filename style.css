@@ -437,9 +437,9 @@
     position: fixed;
     display: flex;
     height: auto;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
-    z-index: 1;
+    z-index: 2;
     top: 0vh;
     letter-spacing: -1vh;
     font-size: 16vh;
