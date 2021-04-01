@@ -20,10 +20,19 @@ var check_kor = /[ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/; //한글
 var check_num = /[0-9]/; // 숫자 
 var check_eng = /[a-zA-Z]/; // 문자
 
+cont_width = parseInt(window.getComputedStyle(document.getElementById("myCanvas")).width);
+cont_height = parseInt(window.getComputedStyle(document.getElementById("myCanvas")).height);
 
-for (let index = 0; index < 45; index++) {
-  img_src.push("./source/background/" + index + ".jpg");
+if (cont_width < 1024) {
+  for (let index = 0; index < 45; index++) {
+    img_src.push("./source/background_small/" + index + ".jpg");
+  }
+} else {
+  for (let index = 0; index < 45; index++) {
+    img_src.push("./source/background/" + index + ".jpg");
+  }
 }
+
 
 
 
@@ -39,12 +48,8 @@ function windowResized() {
 }
 
 function setup() {
-  // cont_width = parseInt(window.getComputedStyle(document.getElementById("container_big")).width);
-  // cont_height = parseInt(window.getComputedStyle(document.body).height);
   cont_width = parseInt(window.getComputedStyle(document.getElementById("myCanvas")).width);
   cont_height = parseInt(window.getComputedStyle(document.getElementById("myCanvas")).height);
-  // height= windowHeight*2/3;
-  // width = windowWidth*2/3;
   height = cont_height;
   width = cont_width;
   console.log(height, width);
@@ -132,11 +137,11 @@ function draw() {
         text(text_array[key], text_coord[key][0], text_coord[key][1]);
       }
     }
-  }else{
-    if (frameCount % 8 == 1){
+  } else {
+    if (frameCount % 8 == 1) {
       img_idx++;
-      if(img_idx == img_src.length){
-        img_idx =0;
+      if (img_idx == img_src.length) {
+        img_idx = 0;
       }
     }
   }
