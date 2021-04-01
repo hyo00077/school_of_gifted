@@ -79,58 +79,60 @@ function draw() {
   imageMode(CENTER);
   image(img_list[img_idx], 0.5 * width, 0.5 * height, width, img_list[img_idx].height * width / img_list[img_idx].width);
   pop();
-  let w_count = int(map(mouseX, 0, width, 1, 20));
-  let h_count = int(map(mouseY, 0, height, 1, 20));
-  let tile_W = width / w_count;
-  let tile_H = height / h_count;
 
-  noStroke();
-  for (let x = 0; x < w_count; x++) {
-    state[x] = [];
-    for (let y = 0; y < h_count; y++) {
-      state[x][y] = int(random(0, 6));
-      let a = new new_content(x, y, state[x][y], tile_W, tile_H);
-      a.object_show();
+  if (width > 983) {
+    let w_count = int(map(mouseX, 0, width, 1, 20));
+    let h_count = int(map(mouseY, 0, height, 1, 20));
+    let tile_W = width / w_count;
+    let tile_H = height / h_count;
+
+    noStroke();
+    for (let x = 0; x < w_count; x++) {
+      state[x] = [];
+      for (let y = 0; y < h_count; y++) {
+        state[x][y] = int(random(0, 6));
+        let a = new new_content(x, y, state[x][y], tile_W, tile_H);
+        a.object_show();
+      }
     }
-  }
 
-  // 글자 표시하는 부분
-  if (frameCount % 8 == 1) {
-    let selected_text = getSelectionText();
-    // console.log(selected_text);
-    add_text_array(selected_text);
-    console.log(text_array);
+    // 글자 표시하는 부분
+    if (frameCount % 8 == 1) {
+      let selected_text = getSelectionText();
+      // console.log(selected_text);
+      add_text_array(selected_text);
+      console.log(text_array);
+      for (let key = 0; key < text_array.length; key++) {
+        let cWidth = textWidth(str(key + 1) + ". " + text_array[key]);
+        let text_x = random(0, width - cWidth);
+        let text_y = height / 5 * key + height / 6.5;
+
+
+        text_coord[key] = [text_x, text_y];
+
+      }
+
+    }
+
     for (let key = 0; key < text_array.length; key++) {
-      let cWidth = textWidth(str(key + 1) + ". " + text_array[key]);
-      let text_x = random(0, width - cWidth);
-      let text_y = height / 5 * key + height / 6.5;
-
-
-      text_coord[key] = [text_x, text_y];
-
-    }
-
-  }
-
-  for (let key = 0; key < text_array.length; key++) {
-    rectMode(CORNER)
-    if (check_kor.test(text_array[key]) == true) {
-      textSize(height / 5 - height / 20);
-      textFont('Gothic A1');
-      fill(255);
-      stroke(252, 11, 216);
-      strokeWeight(8);
-      text(text_array[key], text_coord[key][0], text_coord[key][1]);
-    } else if (check_eng.test(text_array[key]) == true) {
-      textSize(height / 5 - height / 40);
-      textFont('Lexend');
-      fill(255);
-      stroke(252, 11, 216);
-      strokeWeight(8);
-      text(text_array[key], text_coord[key][0], text_coord[key][1]);
+      rectMode(CORNER)
+      if (check_kor.test(text_array[key]) == true) {
+        textSize(height / 5 - height / 20);
+        textFont('Gothic A1');
+        fill(255);
+        stroke(252, 11, 216);
+        strokeWeight(8);
+        text(text_array[key], text_coord[key][0], text_coord[key][1]);
+      } else if (check_eng.test(text_array[key]) == true) {
+        textSize(height / 5 - height / 40);
+        textFont('Lexend');
+        fill(255);
+        stroke(252, 11, 216);
+        strokeWeight(8);
+        text(text_array[key], text_coord[key][0], text_coord[key][1]);
+      }
     }
   }
-
 }
 
 // 실제로 그려지는 것들
@@ -238,5 +240,3 @@ function mouseOut() {
   cnv.mouseOut();
   noLoop();
 }
-
-
