@@ -381,9 +381,9 @@
     cursor: url('./source/arrow/cursor_1.png'), auto;
   }
 
-  div.menus>div.small>div:active {
+/*   div.menus>div.small>div:active {
     background-color: rgb(252, 11, 216);
-  }
+  } */
 
   div.small_1 {
     border-width: 0px 1px 0px 0px;
