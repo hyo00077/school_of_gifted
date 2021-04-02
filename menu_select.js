@@ -1,9 +1,4 @@
-// let purpose = document.getElementById("purpose");
-// let direction = document.getElementById("direction");
-// let curri_track = document.getElementById("curri_track");
-// let curri = document.getElementById("curri");
-// let text_area = document.getElementsByClassName("class");
-let index = 0;
+let index = 2;
 let id_div = ["purpose", "direction", "curri_track"];
 
 _e('purpose').addEventListener('click', function () {
@@ -24,7 +19,6 @@ _e('purpose').addEventListener('click', function () {
     과정이 될 것입니다.
   </p>
   `;
-  // _e("big_name").innerHTML = "배경 및 목적";
   if (index > 1) {
     for (let i = 0; i < id_div.length; i++) {
       _e(id_div[i]).style.backgroundColor = "transparent";
@@ -47,7 +41,6 @@ _e('direction').addEventListener('click', function () {
       <p>자기 주도적이고 끊임없는 질문들을 나누는 수평적인 관계와 우연과 우발, 무작위성 안에서 상상력이 교차하고 결합하면서 자신의 생각과 감정을 동료들과 선생님들, 더 나아가 사회와 활발히 공유할 수 있는 미디어 문해력과 표현력을 키우도록 노력합니다.  </p>
     `;
 
-  // _e("big_name").innerHTML = "교육방향";
   if (index > 1) {
     for (let i = 0; i < id_div.length; i++) {
       _e(id_div[i]).style.backgroundColor = "transparent";
@@ -82,7 +75,6 @@ _e('curri_track').addEventListener('click', function () {
   _e("curri_track").style.backgroundColor = 'rgb(' + 252 + ',' + 11 + ',' + 216 + ')';
   index += 2;
 
-  // _e("big_name").innerHTML = "교육과정 영상 감각트랙";
 
 }, false);
 
