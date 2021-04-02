@@ -1,3 +1,8 @@
+// let purpose = document.getElementById("purpose");
+// let direction = document.getElementById("direction");
+// let curri_track = document.getElementById("curri_track");
+// let curri = document.getElementById("curri");
+// let text_area = document.getElementsByClassName("class");
 let index = 2;
 let id_div = ["purpose", "direction", "curri_track"];
 
@@ -19,11 +24,16 @@ _e('purpose').addEventListener('click', function () {
     과정이 될 것입니다.
   </p>
   `;
+
+  _e("text_box").scrollTo(0,0);
+
+  // _e("big_name").innerHTML = "배경 및 목적";
   if (index > 1) {
     for (let i = 0; i < id_div.length; i++) {
       _e(id_div[i]).style.backgroundColor = "transparent";
     }
     index= 0;
+
   }
   
   _e("purpose").style.backgroundColor = 'rgb(' + 252 + ',' + 11 + ',' + 216 + ')';
@@ -40,6 +50,9 @@ _e('direction').addEventListener('click', function () {
       <p>한국예술영재교육원 융합분야는 미디어아트를 중심으로 한 융합예술 교육입니다. 이를 위해 창의적인 관계성에 주목하고 있으며, 우정과 리더쉽 함양을 바탕으로 몸으로 부터 출발하여 다양한 미디어를 주체적으로 이용하도록 돕습니다. </p>
       <p>자기 주도적이고 끊임없는 질문들을 나누는 수평적인 관계와 우연과 우발, 무작위성 안에서 상상력이 교차하고 결합하면서 자신의 생각과 감정을 동료들과 선생님들, 더 나아가 사회와 활발히 공유할 수 있는 미디어 문해력과 표현력을 키우도록 노력합니다.  </p>
     `;
+
+  // _e("big_name").innerHTML = "교육방향";
+  _e("text_box").scrollTo(0,0);
 
   if (index > 1) {
     for (let i = 0; i < id_div.length; i++) {
@@ -75,6 +88,9 @@ _e('curri_track').addEventListener('click', function () {
   _e("curri_track").style.backgroundColor = 'rgb(' + 252 + ',' + 11 + ',' + 216 + ')';
   index += 2;
 
+  // _e("big_name").innerHTML = "교육과정 영상 감각트랙";
+  _e("text_box").scrollTo(0,0);
+
 
 }, false);
 
@@ -82,3 +98,4 @@ _e('curri_track').addEventListener('click', function () {
 function _e(id) {
   return document.getElementById(id);
 }
+
