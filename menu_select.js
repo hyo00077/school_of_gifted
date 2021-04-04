@@ -4,7 +4,7 @@
 // let curri = document.getElementById("curri");
 // let text_area = document.getElementsByClassName("class");
 let index = 2;
-let id_div = ["purpose", "direction", "curri_track"];
+let id_div = ["purpose", "direction", "curri_track","curri"];
 
 _e('purpose').addEventListener('click', function () {
   _e('text_box').innerHTML = `<p>
@@ -33,7 +33,6 @@ _e('purpose').addEventListener('click', function () {
       _e(id_div[i]).style.backgroundColor = "transparent";
     }
     index= 0;
-
   }
   
   _e("purpose").style.backgroundColor = 'rgb(' + 252 + ',' + 11 + ',' + 216 + ')';
@@ -86,6 +85,64 @@ _e('curri_track').addEventListener('click', function () {
     index= 0;
   }
   _e("curri_track").style.backgroundColor = 'rgb(' + 252 + ',' + 11 + ',' + 216 + ')';
+  index += 2;
+
+  // _e("big_name").innerHTML = "교육과정 영상 감각트랙";
+  _e("text_box").scrollTo(0,0);
+
+
+}, false);
+
+_e('curri').addEventListener('click', function () {
+  _e('text_box').innerHTML = `
+  <table>
+  <tr>
+      <td class="title">구분</td>
+      <td>영상미디어트랙(카메라로 영상만들기)</td>
+      <td>감각미디어트랙(카메라없이 영상만들기)</td>
+  </tr>
+  <tr>
+      <td class="title">파운데이션</td>
+      <td colspan="2">자기소개 및 친교/ 움직임과 아이덴티티 만들기 내 인생의 이미지와 문장</td>
+  </tr>
+  <tr>
+      <td rowspan="3" class="title">1학기</td>
+      <td>포토몽타주</td>
+      <td>글쓰기-움직임-말하기</td>
+  </tr>
+  <tr>
+      <td>카메라의  이해</td>
+      <td>사운드: 소리의 발견과 소리지도</td>
+  </tr>
+  <tr>
+      <td>에세이영상 만들기</td>
+      <td>게임과 인터렉티브 스토리텔링</td>
+  </tr>
+  <tr>
+      <td rowspan="4" class="title">2학기</td>
+      <td>씬 구성과 콘티 만들기</td>
+      <td>감각의 수집과 발상: 관찰하는 법</td>
+  </tr>
+  <tr>
+      <td>푸티지 필름 만들기</td>
+      <td>움직임: 몸으로 시공간 감각하기</td>
+  </tr>
+  <tr>
+      <td>시 영상 만들기</td>
+      <td>감각지도 만들기</td>
+  </tr>
+  <tr>
+      <td colspan="2">발표 및 전시</td>
+  </tr>
+
+</table>`;
+  if (index > 1) {
+    for (let i = 0; i < id_div.length; i++) {
+      _e(id_div[i]).style.backgroundColor = "transparent";
+    }
+    index= 0;
+  }
+  _e("curri").style.backgroundColor = 'rgb(' + 252 + ',' + 11 + ',' + 216 + ')';
   index += 2;
 
   // _e("big_name").innerHTML = "교육과정 영상 감각트랙";
