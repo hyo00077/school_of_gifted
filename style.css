@@ -120,7 +120,7 @@
     /* letter-spacing: -0.4rem; */
     color: rgb(252, 11, 216);
     animation: marquee 10s linear infinite;
-    animation-delay: -10;
+    animation-delay: -10s;
   }
 
   div.logo_img>p#logo_text_2 {
@@ -381,7 +381,7 @@
     /* letter-spacing: -0.4rem; */
     color: rgb(252, 11, 216);
     animation: marquee 10s linear infinite;
-    animation-delay: -10;
+    animation-delay: -10s;
   }
 
   div.logo_img>p#logo_text_2 {
