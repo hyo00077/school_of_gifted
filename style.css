@@ -237,6 +237,8 @@
     /* overflow: hidden; */
     white-space: nowrap;
     /* padding-left: 100%; */
+    -ms-animation-delay: -20;
+    -webkit-animation-delay: -20s;
     animation: marquee 20s linear infinite;
     animation-delay: -20s;
   }
@@ -252,6 +254,8 @@
     white-space: nowrap;
     /* padding-left: 100%; */
     animation: marquee2 20s linear infinite;
+    -ms-animation-delay: -10;
+    -webkit-animation-delay: -10s;
     animation-delay: -10s;
   }
 
@@ -516,6 +520,8 @@
     /* overflow: hidden; */
     white-space: nowrap;
     /* padding-left: 100%; */
+    -ms-animation-delay: -20;
+    -webkit-animation-delay: -20s;
     animation: marquee 20s linear infinite;
     animation-delay: -20s;
   }
@@ -531,6 +537,8 @@
     white-space: nowrap;
     /* padding-left: 100%; */
     animation: marquee2 20s linear infinite;
+    -ms-animation-delay: -10;
+    -webkit-animation-delay: -10s;
     animation-delay: -10s;
   }
 
