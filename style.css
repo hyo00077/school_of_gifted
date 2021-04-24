@@ -120,10 +120,10 @@
     white-space: nowrap;
     /* letter-spacing: -0.4rem; */
     color: rgb(252, 11, 216);
-    animation: marquee 20s linear infinite;
-    animation-delay: -20s;
-    -ms-animation-delay: -20;
-    -webkit-animation-delay: -20s;
+    animation: marquee 30s linear infinite;
+    animation-delay: -30s;
+    -ms-animation-delay: -30;
+    -webkit-animation-delay: -30s;
   }
 
   div.logo_img>div.logo_div_2 {
@@ -137,10 +137,10 @@
     white-space: nowrap;
     /* letter-spacing: -0.4rem; */
     color: rgb(252, 11, 216);
-    animation: marquee2 20s linear infinite;
-    animation-delay: -10s;
-    -ms-animation-delay: -10;
-    -webkit-animation-delay: -10s;
+    animation: marquee2 30s linear infinite;
+    animation-delay: -15s;
+    -ms-animation-delay: -15;
+    -webkit-animation-delay: -15s;
   }
 
   div.menus>div.small {
