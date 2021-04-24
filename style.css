@@ -120,8 +120,10 @@
     white-space: nowrap;
     /* letter-spacing: -0.4rem; */
     color: rgb(252, 11, 216);
-    animation: marquee 10s linear infinite;
-    animation-delay: -10s;
+    animation: marquee 20s linear infinite;
+    animation-delay: -20s;
+    -ms-animation-delay: -20;
+    -webkit-animation-delay: -20s;
   }
 
   div.logo_img>div.logo_div_2 {
@@ -135,8 +137,10 @@
     white-space: nowrap;
     /* letter-spacing: -0.4rem; */
     color: rgb(252, 11, 216);
-    animation: marquee2 10s linear infinite;
-    animation-delay: -5s;
+    animation: marquee2 20s linear infinite;
+    animation-delay: -10s;
+    -ms-animation-delay: -10;
+    -webkit-animation-delay: -10s;
   }
 
   div.menus>div.small {
@@ -372,39 +376,37 @@
   }
 
   div.logo_img>div.logo_div {
-    position: relative;
     display: inline-block;
+    position: relative;
     font-family: 'Lexend', sans-serif;
     font-weight: bold;
     font-size: 5vh;
     padding: 0;
-    height: auto;
-    line-height: 1.35;
+    line-height: 1;
     white-space: nowrap;
     /* letter-spacing: -0.4rem; */
     color: rgb(252, 11, 216);
     animation: marquee 10s linear infinite;
     animation-delay: -10s;
-    top: 20%;
-
+    -ms-animation-delay: -10;
+    -webkit-animation-delay: -10s;
   }
 
   div.logo_img>div.logo_div_2 {
-    position: relative;
     display: inline-block;
+    position: relative;
     font-family: 'Lexend', sans-serif;
     font-weight: bold;
     font-size: 5vh;
     padding: 0;
-    height: auto;
-    line-height: 1.35;
+    line-height: 1;
     white-space: nowrap;
     /* letter-spacing: -0.4rem; */
     color: rgb(252, 11, 216);
     animation: marquee2 10s linear infinite;
     animation-delay: -5s;
-    top: 20%;
-
+    -ms-animation-delay: -5;
+    -webkit-animation-delay: -5s;
   }
 
   div.menus>div.small {
