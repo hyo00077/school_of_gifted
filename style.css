@@ -29,7 +29,7 @@
     border-style: solid;
   }
 
-/*   p {
+  /* p {
     font-size: 20px;
     line-height: 180%;
   } */
@@ -110,6 +110,7 @@
   }
 
   div.logo_img>div.logo_div {
+    display: inline-block;
     position: relative;
     font-family: 'Lexend', sans-serif;
     font-weight: bold;
@@ -124,6 +125,7 @@
   }
 
   div.logo_img>div.logo_div_2 {
+    display: inline-block;
     position: relative;
     font-family: 'Lexend', sans-serif;
     font-weight: bold;
@@ -369,8 +371,9 @@
     display: flex;
   }
 
- div.logo_img>div.logo_div {
+  div.logo_img>div.logo_div {
     position: relative;
+    display: inline-block;
     font-family: 'Lexend', sans-serif;
     font-weight: bold;
     font-size: 5vh;
@@ -386,6 +389,7 @@
 
   div.logo_img>div.logo_div_2 {
     position: relative;
+    display: inline-block;
     font-family: 'Lexend', sans-serif;
     font-weight: bold;
     font-size: 5vh;
