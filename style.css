@@ -123,6 +123,10 @@
     animation: marquee 30s linear infinite;
     animation-delay: -30s;
     -ms-animation-delay: -30;
+    -webkit-animation-name: marquee;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
     -webkit-animation-delay: -30s;
   }
 
@@ -140,7 +144,11 @@
     animation: marquee2 30s linear infinite;
     animation-delay: -15s;
     -ms-animation-delay: -15;
-    -webkit-animation-delay: -15s;
+    -webkit-animation-name: marquee2;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: -15s;  
   }
 
   div.menus>div.small {
@@ -510,36 +518,46 @@
     letter-spacing: 0;
   }
 
-  .header>div.first {
-    /* font-size: 100%; */
-    /* line-height: 100%; */
+  div.logo_img>div.logo_div {
+    display: inline-block;
+    position: relative;
     font-family: 'Lexend', sans-serif;
     font-weight: bold;
+    font-size: 5vh;
+    padding: 0;
+    line-height: 1;
+    white-space: nowrap;
     /* letter-spacing: -0.4rem; */
     color: rgb(252, 11, 216);
-    /* overflow: hidden; */
-    white-space: nowrap;
-    /* padding-left: 100%; */
-    animation: marquee 20s linear infinite;
-    animation-delay: -20s;
-    -ms-animation-delay: -20;
-    -webkit-animation-delay: -20s;
+    animation: marquee 30s linear infinite;
+    animation-delay: -30s;
+    -ms-animation-delay: -30;
+    -webkit-animation-name: marquee;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: -30s;
   }
 
-  .header>div.second {
-    /* font-size: 100%; */
-    /* line-height: 100%; */
+  div.logo_img>div.logo_div_2 {
+    display: inline-block;
+    position: relative;
     font-family: 'Lexend', sans-serif;
     font-weight: bold;
+    font-size: 5vh;
+    padding: 0;
+    line-height: 1;
+    white-space: nowrap;
     /* letter-spacing: -0.4rem; */
     color: rgb(252, 11, 216);
-    /* overflow: hidden; */
-    white-space: nowrap;
-    /* padding-left: 100%; */
-    animation: marquee2 20s linear infinite;
-    animation-delay: -10s;
-    -ms-animation-delay: -10;
-    -webkit-animation-delay: -10s;
+    animation: marquee2 30s linear infinite;
+    animation-delay: -15s;
+    -ms-animation-delay: -15;
+    -webkit-animation-name: marquee2;
+    -webkit-animation-duration: 30s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: -15s;  
   }
 
   div.texts>table{
