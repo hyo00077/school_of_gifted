@@ -106,7 +106,7 @@
     border-style: solid;
     overflow: hidden;
     white-space: nowrap;
-    display: flex;
+    /* display: flex; */
   }
 
   div.logo_img>div.logo_div {
@@ -368,7 +368,7 @@
     border-style: solid;
     overflow: hidden;
     white-space: nowrap;
-    display: flex;
+    /* display: flex; */
   }
 
   div.logo_img>div.logo_div {
@@ -385,6 +385,8 @@
     color: rgb(252, 11, 216);
     animation: marquee 10s linear infinite;
     animation-delay: -10s;
+    top: 20%;
+
   }
 
   div.logo_img>div.logo_div_2 {
@@ -401,6 +403,8 @@
     color: rgb(252, 11, 216);
     animation: marquee2 10s linear infinite;
     animation-delay: -5s;
+    top: 20%;
+
   }
 
   div.menus>div.small {
